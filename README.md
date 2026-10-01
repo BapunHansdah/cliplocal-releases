@@ -31,3 +31,19 @@ Download the .zip from this release
 Go to chrome://extensions
 Enable "Developer mode"
 Drag and Drop the zip
+
+### Update metadata
+
+Keep `latest.json` updated whenever a new release is published. The extension
+checks this public file and shows an in-app update banner when its version is
+newer than the installed version.
+
+Example:
+
+```json
+{
+  "version": "0.2.0",
+  "notes": "Improved video extraction",
+  "downloadUrl": "https://github.com/BapunHansdah/cliplocal-releases/releases/download/v0.2.0/cliplocal-0.2.0.zip"
+}
+```
